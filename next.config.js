@@ -4,8 +4,10 @@ const nextConfig = {
     serverComponentsExternalPackages: ['@prisma/client', 'bcryptjs'],
   },
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'vercel.app'],
   },
+  // Ensure proper output for Vercel
+  output: 'standalone',
 }
 
 module.exports = nextConfig
